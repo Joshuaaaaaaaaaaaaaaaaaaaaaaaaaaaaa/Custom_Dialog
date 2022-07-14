@@ -4,11 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".terms_condition">
 
-    <TextView
+    <ImageButton
+        android:id="@+id/backbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello po "/>
+        android:background="@color/white"
+        android:src="@drawable/back_foreground" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/logo"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
 
 </LinearLayout>
