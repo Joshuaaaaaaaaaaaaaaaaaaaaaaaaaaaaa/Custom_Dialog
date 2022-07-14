@@ -40,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
         dialog.setContentView(R.layout.layout_custom_dialog);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
+
+        TextView tv = (TextView) ((Dialog) dialog).findViewById(R.id.terms);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showTNC();
+            }
+        });
         dialog.show();
 
     }
