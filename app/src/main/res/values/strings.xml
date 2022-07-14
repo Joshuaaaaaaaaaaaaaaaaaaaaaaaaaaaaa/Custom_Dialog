@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Custom_Dialog</string>
+    <string name="msg">By clicking SUBMIT you have\naccepted and agreed to all our\nTerms and Conditions</string>
+</resources>
